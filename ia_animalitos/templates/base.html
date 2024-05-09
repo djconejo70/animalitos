@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load static %}
+<title>IA-Animalitos</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href=  "{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="{% static 'js/cufon-yui.js' %}" ></script>
+<script type="text/javascript" src="{% static 'js/arial.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/cuf_run.js' %}"></script>
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div id='uno' style="margin-bottom:-10px;">
+  <a href="https://www.bcv.org.ve/" style="color:#F9F9F9;"><MARQUEE  behavior="ALTERNATE" scrollamount=6 width=100% height=100% bgcolor="1E5D8E"> BCV OFICIAL - COTIZACIONES DEL DIA: DOLAR ($): {{valordolar}} EURO (Є): {{valoreuro}} FECHA BCV: {{fecha}} </MARQUEE></a>
+</div>
+<div class="main">		 
+      <div class="header">
+        <div class="logo" style="margin-left:20px;">
+          <h1><a href="index.html"><span>IA</span>Animalitos</a></h1>
+        </div>
+        <div  style="width:30px; height:30px; float:left; margin-top:21px; position:absolute; margin-left:-5px">
+          <a><img class="hexagono" src="../../static/img/img_{{loto11}}.jpg" width="60" height="60" alt="" /></a>          
+        </div>
+        <div class="menu_nav" >
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>   
+      </div>
+
+
+      <div class="container" style="background-color:steelblue; font-size:130%; color:white; text-align:center; ">
+        <script>
+          let meses = new Array ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+          let diasSemana = new Array("Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado");
+          let f = new Date();
+          document.write(diasSemana[f.getDay()] + ", " + f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+        </script>
+        <h3 style="text-align:center; margin-top:-10px;">RESULTADOS LOTTO ACTIVO</h3>        
+        <div  style="height: 150px; width: 970px; display: flex; justify-content: center;">
+          {% if nombre_loto9 != '' %}            
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div>  
+                <a><img  class="hexagono" src="../../static/img/img_{{loto9}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto9}} - {{loto9}}</div>
+              <div style="font-size:12px; font-weight: 700;">9:00 AM</div>                             
+            </div>
+          {% endif%}
+          {% if nombre_loto10 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div >  
+                <a><img class="hexagono" src="../../static/img/img_{{loto10}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto10}} - {{loto10}}</div>
+              <div style="font-size:12px; font-weight: 700;">10:00 AM</div>                             
+            </div>
+          {% endif %}
+          {% if nombre_loto11 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div>  
+                <a><img class="hexagono" src="../../static/img/img_{{loto11}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto11}} - {{loto11}}</div>
+              <div style="font-size:12px; font-weight: 700;">11:00 AM</div>                             
+            </div>
+          {% endif %}
+          {% if nombre_loto12 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div >  
+                <a><img class="hexagono"src="../../static/img/img_{{loto12}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto12}} - {{loto12}}</div>
+              <div style="font-size:12px; font-weight: 700;">12:00M</div>
+            {% endif %}
+            {% if nombre_loto13 != '' %}  
+            </div><div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div>  
+                <a><img class="hexagono" src="../../static/img/img_{{loto13}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto13}} - {{loto13}}</div>
+              <div style="font-size:12px; font-weight: 700;">01:00 PM</div>                             
+            </div>
+          {% endif %}
+          {% if nombre_loto14 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div >  
+                <a><img class="hexagono" src="../../static/img/img_{{loto14}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto14}} - {{loto14}}</div>
+              <div style="font-size:12px; font-weight: 700;">02:00 PM</div>                             
+            </div> 
+          {% endif %}
+          {% if nombre_loto15 != '' %}  
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div>  
+                <a><img class="hexagono" src="../../static/img/img_{{loto15}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto15}} - {{loto15}}</div>
+              <div style="font-size:12px; font-weight: 700;">03:00 PM</div>                             
+            </div>
+          {% endif %}
+          {% if nombre_loto16 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div>  
+                <a><img class="hexagono" src="../../static/img/img_{{loto16}}.jpg" width="85" height="85" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{nombre_loto16}} - {{loto16}}</div>
+              <div style="font-size:12px; font-weight: 700;">04:00 PM</div>                             
+            </div>
+          {% endif %}
+          {% if nombre_loto17 != '' %}
+              <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+                <div>  
+                  <a><img class="hexagono" src="../../static/img/img_{{loto17}}.jpg" width="85" height="85" alt="" /></a> 
+                </div>
+                <div style="font-size:12px; font-weight: 700;">{{nombre_loto17}} - {{loto17}}</div>
+                <div style="font-size:12px; font-weight: 700;">05:00 PM</div>                             
+              </div>
+          {% endif %}
+          {% if nombre_loto18 != '' %}
+              <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+                <div >  
+                  <a><img class="hexagono" src="../../static/img/img_{{loto18}}.jpg" width="85" height="85" alt="" /></a> 
+                </div>
+                <div style="font-size:12px; font-weight: 700;">{{nombre_loto18}} - {{loto18}}</div>
+                <div style="font-size:12px; font-weight: 700;">06:00 PM</div>                             
+              </div>
+          {% endif %}
+          {% if nombre_loto19 != '' %}
+              <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+                <div >  
+                  <a><img class="hexagono" src="../../static/img/img_{{loto19}}.jpg" width="85" height="85" alt="" /></a> 
+                </div>
+                <div style="font-size:12px; font-weight: 700;">{{nombre_loto19}} - {{loto19}}</div>
+                <div style="font-size:12px; font-weight: 700;">07:00 PM</div>                             
+              </div>
+          {% endif %}
+        </div>          
+      </div>      
+    </div>
+    <div class="container" style="background-color:steelblue; font-size:130%; color:white; text-align:center; margin-top:-30px;">
+      <h3 style="text-align:center;">RESULTADOS LA GRANJITA</h3>        
+      <div  style="height: 150px; width: 970px; display: flex; justify-content: center;">
+        {% if ngranja8 != '' %}            
+          <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div>  
+              <a><img  class="hexagono" src="../../static/img/img_{{granja8}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja8}} - {{granja8}}</div>
+            <div style="font-size:12px; font-weight: 700;">8:00 AM</div>                             
+          </div>
+        {% endif%}
+        {% if ngranja9 != '' %}
+          <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div >  
+              <a><img class="hexagono" src="../../static/img/img_{{granja9}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja9}} - {{granja9}}</div>
+            <div style="font-size:12px; font-weight: 700;">09:00 AM</div>                             
+          </div>
+        {% endif %}
+        {% if ngranja10 != '' %}
+          <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div>  
+              <a><img class="hexagono" src="../../static/img/img_{{granja10}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja10}} - {{granja10}}</div>
+            <div style="font-size:12px; font-weight: 700;">10:00 AM</div>                             
+          </div>
+        {% endif %}
+        {% if ngranja11 != '' %}
+          <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div >  
+              <a><img class="hexagono"src="../../static/img/img_{{granja11}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja11}} - {{granja11}}</div>
+            <div style="font-size:12px; font-weight: 700;">11:00M</div>
+          {% endif %}
+          {% if ngranja12 != '' %}  
+          </div><div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div>  
+              <a><img class="hexagono" src="../../static/img/img_{{granja12}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja12}} - {{granja12}}</div>
+            <div style="font-size:12px; font-weight: 700;">12:00 M</div>                             
+          </div>
+        {% endif %}
+        {% if ngranja13 != '' %}
+          <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div >  
+              <a><img class="hexagono" src="../../static/img/img_{{granja13}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja13}} - {{granja13}}</div>
+            <div style="font-size:12px; font-weight: 700;">01:00 PM</div>                             
+          </div> 
+        {% endif %}
+        {% if ngranja14 != '' %}  
+          <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div>  
+              <a><img class="hexagono" src="../../static/img/img_{{granja14}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja14}} - {{granja14}}</div>
+            <div style="font-size:12px; font-weight: 700;">02:00 PM</div>                             
+          </div>
+        {% endif %}
+        {% if ngranja15 != '' %}
+          <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+            <div>  
+              <a><img class="hexagono" src="../../static/img/img_{{granja15}}.jpg" width="80" height="80" alt="" /></a> 
+            </div>
+            <div style="font-size:12px; font-weight: 700;">{{ngranja15}} - {{granja15}}</div>
+            <div style="font-size:12px; font-weight: 700;">03:00 PM</div>                             
+          </div>
+        {% endif %}
+        {% if ngranja16 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div>  
+                <a><img class="hexagono" src="../../static/img/img_{{granja16}}.jpg" width="80" height="80" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{ngranja16}} - {{granja16}}</div>
+              <div style="font-size:12px; font-weight: 700;">04:00 PM</div>                             
+            </div>
+        {% endif %}
+        {% if ngranja17 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div >  
+                <a><img class="hexagono" src="../../static/img/img_{{granja17}}.jpg" width="80" height="80" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{ngranja17}} - {{granja17}}</div>
+              <div style="font-size:12px; font-weight: 700;">05:00 PM</div>                             
+            </div>
+        {% endif %}
+        {% if ngranja18 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div >  
+                <a><img class="hexagono" src="../../static/img/img_{{granja18}}.jpg" width="80" height="80" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{ngranja18}} - {{granja18}}</div>
+              <div style="font-size:12px; font-weight: 700;">06:00 PM</div>                             
+            </div>
+        {% endif %}
+        {% if ngranja19 != '' %}
+            <div  class="d-flex justify-content-between" style="text-align:center; background-color:steelblue;  align-items: center; position: relative; float:left;">
+              <div >  
+                <a><img class="hexagono" src="../../static/img/img_{{granja19}}.jpg" width="80" height="80" alt="" /></a> 
+              </div>
+              <div style="font-size:12px; font-weight: 700;">{{ngranja19}} - {{granja19}}</div>
+              <div style="font-size:12px; font-weight: 700;">07:00 PM</div>                             
+            </div>
+        {% endif %}         
+      </div>          
+    </div>
+  </div>
+        
+             
+  <div class="content">
+    {% block content %}
+
+	{% endblock %}
+     
+      
+    </div>
+    <div class="sidebar" >
+   
+      
+      <div class="gadget">
+        <h2 class="star"><span>Sponsors</span></h2>
+        <div class="clr"></div>
+        <ul class="ex_menu">
+          <li><a href="#">La clave de los Campeones</a><br />
+            El mejor programa de Pronostico en Loterias, Deportes y animalitos</li>
+          <li><a href="#">A Ras de Cesped</a><br />
+            Canal de Futbol - #VinotintoSoy</li>
+          <li><a href="#">Nombre-Logo de su empresa</a><br />
+            Su descripcion</li>
+          <li><a href="#">Nombre-Logo de su empresa</a><br />
+              Su descripcion</li>
+          <li><a href="#">Nombre-Logo de su empresa</a><br />
+                Su descripcion</li>
+          <li><a href="#">Nombre-Logo de su empresa</a><br />
+                  Su descripcion</li>
+        </ul>
+      </div>
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="fbg" style="margin-top:-40px">
+    <div class="fbg_resize">
+      <div class="col c1" style="width:30%; background-color:#0655F3; height:210px; font-size:80%; color:white; text-align:center;">
+        <h2><span style="font-size:medium; color:white; margin-top:25px;">Recomendaciones IA para hoy:</span></h2>
+        <div style="float:left; width:50%; height:100%;  margin-top:25px;">            
+          <a style=" margin-left:30px;"><img class="hexagono"  src="../../static/img/img_{{dato1}}.jpg" width="90" height="90" alt="" /></a>
+          <div style="font-size:12px; margin-left:10px; font-weight: 800;">{{nombre_dato1}} - {{dato1}}</div>
+        </div>
+      
+        <div style="float:right; width:50%; height:100%; margin-top:25px; "> 
+          <div>           
+              <a style="margin-left:30px;"><img class="hexagono"  src="../../static/img/img_{{dato2}}.jpg" width="90" height="90" alt="" /></a>
+          </div>
+          <div style="font-size:12px; margin-left:10px;  font-weight: 800;">{{nombre_dato2}} - {{dato2}}</div>
+        </div>
+        <div class="clr"></div>
+        
+      </div>  
+        
+      <div class="col c2"  style="background-color:steelblue; font-size:80%; color:white; text-align:center; width:30%; height:210px;">
+        <h3 style="color: white; font-size:x-large;">Lotto Activo</h3>
+        <h2 style="color: white; margin-top:-15px;">Ultimos  60 dias</h2>
+       
+        <div style="float:left; width:50%; height:100%;">            
+            <a ><img class="hexagono"  src="../../static/img/img_{{salemasloto}}.jpg" width="70" height="70" alt="" /></a>
+            <div style="font-size:12px; font-weight: 800;">{{nombresalidorloto}} - {{salemasloto}}</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidadsalidorloto}} - Veces</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Mayor Salidor</div>
+        </div>
+        
+        <div style="float:right; width:50%; height:100%;"> 
+          <div>           
+              <a ><img class="hexagono"  src="../../static/img/img_{{menorsalidorloto}}.jpg" width="70" height="70" alt="" /></a>
+          </div>
+          <div style="font-size:12px; font-weight: 700; font-weight: 800;">{{nombre_menor_salidor_lotto}} - {{menorsalidorloto}}</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidad_menor_loto}} - Veces</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Menor Salidor</div>
+        </div>       
+      </div>
+
+
+      <div class="col c2"  style="background-color:steelblue; font-size:80%; color:white; text-align:center;  width:30%; height:210px; ">
+        <h3 style="color: white; font-size:x-large">La Granjita</h3>
+        <h2 style="color: white; margin-top:-15px;">Ultimos  60 dias</h2>
+       
+        <div style="float:left; width:50%; height:100%;">            
+            <a ><img class="hexagono"  src="../../static/img/img_{{mayorsalidorgranja}}.jpg" width="70" height="70" alt="" /></a>
+            <div style="font-size:12px; font-weight: 800;">{{nombresalidorgranja}} - {{mayorsalidorgranja}}</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidadmayorsalidorgranja}} - Veces</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Mayor Salidor</div>
+        </div>
+        
+        <div style="float:right; width:50%; height:100%;"> 
+          <div>           
+              <a><img class="hexagono"  src="../../static/img/img_{{menorsalidorgranja}}.jpg" width="70" height="70" alt="" /></a>
+          </div>
+          <div style="font-size:12px; font-weight: 800;">{{nombre_menor_salidor_granja}} - {{menorsalidorgranja}}</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidadmenorsalidorgranja}} - Veces</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Menor Salidor</div>
+        </div>       
+      </div>
+
+
+      
+      
+      
+    </div>
+      
+  </div>    
+</div>
+       
+    </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; 2024 <a href="#">IAAnimalitos.com</a> - All Rights Reserved</p>
+      <p class="rf">Design by <a href="https://lmarinportafolios.000webhostapp.com/">DjConejo (Luis Marin)</a></p>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<!-- END PAGE SOURCE -->
+</body>
+</html>

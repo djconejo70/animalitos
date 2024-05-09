@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+{% load static %}
+<title>IA-Animalitos</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href=  "{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="{% static 'js/cufon-yui.js' %}" ></script>
+<script type="text/javascript" src="{% static 'js/arial.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/cuf_run.js' %}"></script>
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div id='uno' style="margin-bottom:-10px;">
+  <a href="https://www.bcv.org.ve/" style="color:#F9F9F9;"><MARQUEE  behavior="ALTERNATE" scrollamount=6 width=100% height=100% bgcolor="1E5D8E"> BCV OFICIAL - COTIZACIONES DEL DIA: DOLAR ($): {{valordolar}} EURO (Є): {{valoreuro}} FECHA BCV: {{fecha}} </MARQUEE></a>
+</div>
+<div class="main">		 
+      <div class="header">
+        <div class="logo" style="margin-left:20px;">
+          <h1><a href="index.html"><span>IA</span>Animalitos</a></h1>
+        </div>
+        <div  style="width:30px; height:30px; float:left; margin-top:21px; position:absolute; margin_left:-5px">
+          <a><img class="hexagono" src="./static/img/img_No disponible.jpg" width="60" height="60" alt="" /></a>          
+        </div>
+        <div class="menu_nav" >
+          <ul>
+            <li class="active"><a>Home</a></li>
+            <li><a href="{% url 'soporte' %}">Soporte</a></li>
+            
+            <li ><a href="{% url 'contacto' %}">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>   
+      </div>
+      {% include 'resultados.html' %}
+
+      
+
+  </div>
+        
+             
+  <div class="content">
+    <div class="mainbar">
+      <div class="article" style="color:#151618;" >
+        <span style="font-size: medium; ">INTELIGENCIA ARTIFICIAL- LOTERIAS DE ANIMALITOS EN VENEZUELA</span>
+        <div class="clr"></div>
+        {% comment %} <p class="post-data"><span class="date">March 16, 2018</span> &nbsp;|&nbsp; Posted by <a href="#">Owner</a> &nbsp;|&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a></p> {% endcomment %}
+        <img src="{% static 'img/header_images.jpg' %}" width="613" height="193" alt="" />
+        <p >Venezuela es uno de los países de Latinoamérica con más tradición en juegos de lotería.
+           Y es que, si uno pregunta en las calles de nuestro hermoso país, muchos nos hablarán de Chance, 
+           Lotería de Caracas, Lotería del Zulia, Lotto Quiz, el Kino Táchira y el popular Triple Gordo.
+            Por un asunto de situación país, algunas de esas loterías venezolanas dejaron de operar, pero 
+            mientras estás se iban o desistían, un juego de azar basado en el sorteo se apoderaba de muchas
+             regiones del país: hablamos de la lotería de los animalitos. Desde este portal le queremos hacer
+             llegar la informacion de los resultados de los sorteos mas conocidos, asi como  también les compartiremos
+             los pronosticos realizados a traves de esta herramienta moderna, conocida como INTELIGENCIA ARTIFICIAL.
+             No somos DATEROS, Nuestros pronóstico están basados analisis de resultados y tendencias a través de 
+             códigos del lenguaje de programacion Python y sus librerías Tensorflow y Keras (entre otras), para la creación de redes 
+             neuronales de predicción. Nuestro objetivo es llevarles la información proveniente de datos estadísticos, 
+             medias, medianas diagramas secuenciales, etc. de datos de más de 200 días de sorteos previos, analizados por una red neuronal
+             y con visión del beneficio constante y frecuente.</p>
+        
+        <div class="clr"></div>
+      </div>
+     
+      
+    </div>
+    {% include 'sidebar_ext.html' %}   
+    
+  </div>
+  
+  {% include 'ext_datos.html' %}
+
+
+</div>
+       
+    </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; 2024 <a href="#">IAAnimalitos.com</a> - All Rights Reserved</p>
+      <p class="rf">Design by <a href="https://lmarinportafolios.000webhostapp.com/">DjConejo (Luis Marin)</a></p>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<!-- END PAGE SOURCE -->
+</body>
+</html>

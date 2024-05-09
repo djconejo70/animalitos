@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+{% load static %}
+<title>IA-Animalitos</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href=  "{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+
+
+<script type="text/javascript" src="{% static 'js/cufon-yui.js' %}" ></script>
+<script type="text/javascript" src="{% static 'js/arial.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/cuf_run.js' %}"></script>
+</head>
+<body>
+<!-- START PAGE SOURCE -->
+<div id='uno' style="margin-bottom:-10px;">
+  <a href="https://www.bcv.org.ve/" style="color:#F9F9F9;"><MARQUEE  behavior="ALTERNATE" scrollamount=6 width=100% height=100% bgcolor="1E5D8E"> BCV OFICIAL - COTIZACIONES DEL DIA: DOLAR ($): {{valordolar}} EURO (Є): {{valoreuro}} FECHA BCV: {{fecha}} </MARQUEE></a>
+</div>
+<div class="main">		 
+      <div class="header">
+        <div class="logo" style="margin-left:20px;">
+          <h1><a href="index.html"><span>IA</span>Animalitos</a></h1>
+        </div>
+        <div  style="width:30px; height:30px; float:left; margin-top:21px; position:absolute; margin_left:-5px">
+          <a><img class="hexagono" src="../../static/img/img_No disponible.jpg" width="60" height="60" alt="" /></a>          
+        </div>
+        <div class="menu_nav" >
+          <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li class="active"><a>Soporte</a></li>
+            
+            <li ><a href="{% url 'contacto' %}">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="clr"></div>   
+      </div>
+      {% include 'resultados.html' %}
+
+      
+
+  </div>
+        
+             
+  <div class="content">
+    <div class="mainbar">
+      <div class="article" style="color:#151618;" >
+        <span style="font-size: medium; ">SOPORTE TECNICO - DESCRIPCION</span>
+        <div class="clr"></div>
+        {% comment %} <p class="post-data"><span class="date">March 16, 2018</span> &nbsp;|&nbsp; Posted by <a href="#">Owner</a> &nbsp;|&nbsp; Filed under <a href="#">templates</a>, <a href="#">internet</a></p> {% endcomment %}
+        <img src="{% static 'img/images_1.jpg' %}" width="613" height="193" alt="" />
+        <p >Hablar de inteligencia artificial (IA) es algo tan sencillo como hablar de máquinas inteligentes. Es decir, máquinas que están programadas
+             para llevar a cabo determinadas tareas de forma automática sin la necesidad de que los seres humanos supervisen su trabajo. Esta 
+             pagina es un vivo ejemplo de ello. Se actualiza a potestad de la carga de la misma, contiene tareas que se ejecutan a ciertas y 
+             determinadas horas, destacandose entre ellas las del estudio y analisis de los resultados del dia 
+             para hacerles llegar las tendencias posibles del dia siguiente. Rescato la medicion de los indices de aciertos,
+             que con solo 2 indicaciones diarias, mantienen una efectividad por arriba del 60% Semanal. Le recordamos que NO SOMOS DATEROS, 
+             Nuestros pronóstico están basados analisis de resultados y tendencias a través de 
+             códigos del lenguaje de programacion Python y sus librerías Tensorflow y Keras (entre otras), para la creación de redes 
+             neuronales de predicción. Nuestro objetivo es llevarles la información proveniente de datos estadísticos, 
+             medias, medianas diagramas secuenciales, etc. de datos de más de 200 días de sorteos previos, analizados por una red neuronal
+             y con visión del beneficio constante y frecuente. El codigo base de creacion de esta red neuronal de analisis lo pueden ubicar  
+            <a href="https://github.com/djconejo70/App-IA-predicciones-sorteo-animalitos.git">aqui</a></p>
+        
+        <div class="clr"></div>
+      </div>
+     
+      
+    </div>
+    {% include 'sidebar_ext.html' %}   
+    
+  </div>
+  
+  {% include 'ext_datos.html' %}
+
+
+</div>
+       
+    </div>
+      <div class="clr"></div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; 2024 <a href="#">IAAnimalitos.com</a> - All Rights Reserved</p>
+      <p class="rf">Design by <a href="https://lmarinportafolios.000webhostapp.com/">DjConejo (Luis Marin)</a></p>
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<!-- END PAGE SOURCE -->
+</body>
+</html>

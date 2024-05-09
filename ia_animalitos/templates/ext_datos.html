@@ -1,0 +1,89 @@
+<div class="fbg" style="margin-top:-10px">
+    <div class="fbg_resize">
+      <div class="col c1" style="width:30%; background-color:#0655F3; height:210px; font-size:80%; color:white; text-align:center;">
+        <h2><span style="font-size:medium; color:white; margin-top:25px;">Recomendaciones IA para hoy:</span></h2>
+        {% if dato1 == dato2 %} 
+
+                <div style="float:left; width:50%; height:100%; align:center; ">            
+                  <a style="align:center;  margin-left:30px;"><img class="hexagono"  src="../../static/img/img_{{dato1}}.jpg" width="90" height="90" alt="" /></a>
+                  <div style="font-size:12px; margin-left:10px; font-weight: 800; margin-top:-10px">{{nombre_dato1}} - {{dato1}}</div>
+                </div>        
+                <div style="float:right; width:50%; height:100%; align:center;  "> 
+                  <div>           
+                      <a style="align:center; margin-left:30px;"><img class="hexagono" src="../../static/img/img_solo.jpg"  width="90" height="90" alt="" /></a>
+                  </div>
+                <div style="font-size:12px; margin-left:10px;  font-weight: 800; margin-top:-10px">Solo 1 indicado</div>
+              </div>        
+              <div style="float:left; margin-top:-70px; margin-left:18px;"> En la semana {{indicaciones}} indicaciones {{acierto}} aciertos {{efectividad}} efectividad</div>
+            
+        {% else %}
+            <div style="float:left; width:50%; height:100%; align:center; ">            
+              <a style="align:center;  margin-left:30px;"><img class="hexagono"  src="../../static/img/img_{{dato1}}.jpg" width="90" height="90" alt="" /></a>
+              <div style="font-size:12px; margin-left:10px; font-weight: 800; margin-top:-10px">{{nombre_dato1}} - {{dato1}}</div>
+            </div>        
+            <div style="float:right; width:50%; height:100%; align:center;  "> 
+              <div>           
+                  <a style="align:center; margin-left:30px;"><img class="hexagono"  src="../../static/img/img_{{dato2}}.jpg" width="90" height="90" alt="" /></a>
+              </div>
+            <div style="font-size:12px; margin-left:10px;  font-weight: 800; margin-top:-10px">{{nombre_dato2}} - {{dato2}}</div>
+          </div>        
+          <div style="float:left; margin-top:-70px; margin-left:18px;"> En la semana {{indicaciones}} indicaciones {{acierto}} aciertos {{efectividad}} efectividad</div>
+        
+        {% endif %}
+        
+        
+          
+        
+      </div>
+      
+        
+      <div class="col c2"  style="background-color:steelblue; font-size:80%; color:white; text-align:center; width:30%; height:210px;">
+        <h3 style="color: white; font-size:x-large;">Lotto Activo</h3>
+        <h2 style="color: white; margin-top:-15px;">Ultimos  60 dias</h2>
+       
+        <div style="float:left; width:50%; height:100%;">            
+            <a style="align:center;"><img class="hexagono"  src="../../static/img/img_{{salemasloto}}.jpg" width="70" height="70" alt="" /></a>
+            <div style="font-size:12px; font-weight: 800;">{{nombresalidorloto}} - {{salemasloto}}</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidadsalidorloto}} - Veces</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Mayor Salidor</div>
+        </div>
+        
+        <div style="float:right; width:50%; height:100%;"> 
+          <div>           
+              <a style="align:center;"><img class="hexagono"  src="../../static/img/img_{{menorsalidorloto}}.jpg" width="70" height="70" alt="" /></a>
+          </div>
+          <div style="font-size:12px; font-weight: 700; font-weight: 800;">{{nombre_menor_salidor_lotto}} - {{menorsalidorloto}}</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidad_menor_loto}} - Veces</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Menor Salidor</div>
+        </div>       
+      </div>
+
+
+      <div class="col c2"  style="background-color:steelblue; font-size:80%; color:white; text-align:center;  width:30%; height:210px; ">
+        <h3 style="color: white; font-size:x-large">La Granjita</h3>
+        <h2 style="color: white; margin-top:-15px;">Ultimos  60 dias</h2>
+       
+        <div style="float:left; width:50%; height:100%;">            
+            <a style="align:center;"><img class="hexagono"  src="../../static/img/img_{{mayorsalidorgranja}}.jpg" width="70" height="70" alt="" /></a>
+            <div style="font-size:12px; font-weight: 800;">{{nombresalidorgranja}} - {{mayorsalidorgranja}}</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidadmayorsalidorgranja}} - Veces</div>
+            <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Mayor Salidor</div>
+        </div>
+        
+        <div style="float:right; width:50%; height:100%;"> 
+          <div>           
+              <a style="align:center;"><img class="hexagono"  src="../../static/img/img_{{menorsalidorgranja}}.jpg" width="70" height="70" alt="" /></a>
+          </div>
+          <div style="font-size:12px; font-weight: 800;">{{nombre_menor_salidor_granja}} - {{menorsalidorgranja}}</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> {{cantidadmenorsalidorgranja}} - Veces</div>
+          <div style="font-size:12px; margin-top:-10px; font-weight: 800;"> Menor Salidor</div>
+        </div>       
+      </div>
+
+
+      
+      
+      
+    </div>
+      
+  </div>
